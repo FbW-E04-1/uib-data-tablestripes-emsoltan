@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        table, th, td {
+            width: 50%;
+            border: 3px solid white;
+            border-collapse: collapse;
+            text-align: left;
+            table-layout: fixed;
+            padding: 0.25em;
+        }
+        thead, th {
+            background-color: #888888;
+            color: white;
+            padding: 0.5em;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #c0c0c0;
+        }
+        tbody tr:nth-child(even){
+            background-color:  #efefef;
+        }
+        tbody tr:nth-child(3) td:nth-of-type(2) {
+            background-color: #ffbbbb;
+        }
+        tbody tr:nth-child(6) td:nth-of-type(2) {
+            background-color: #ffbbbb;
+
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th scope="col">Last Name</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>Scott</td>
+              <td>Gomez</td>
+              <td>Player</td>
+          </tr>
+          <tr>
+            <td>Paul</td>
+            <td>Mackie</td>
+            <td>Coach</td>
+          </tr>
+          <tr>
+            <td>Leoni</td>
+            <td>Cabrera</td>
+            <td>Assistant</td>
+          </tr>
+          <tr>
+            <td>Gregor</td>
+            <td>Byrne</td>
+            <td>Player</td>
+          </tr>
+          <tr>
+            <td>Francis</td>
+            <td>Shaffer</td>
+            <td>Manager</td>
+          </tr>
+          <tr>
+            <td>Walter</td>
+            <td>Gale</td>
+            <td>Player</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
