@@ -12,30 +12,38 @@
         }
         table, th, td {
             width: 50%;
-            border: 3px solid white;
+            border: 5px solid white;
             border-collapse: collapse;
             text-align: left;
             table-layout: fixed;
             padding: 0.25em;
         }
-        thead, th {
+        thead {
             background-color: #888888;
             color: white;
             padding: 0.5em;
         }
-        tbody tr:nth-child(odd){
+        tbody {
             background-color: #c0c0c0;
         }
         tbody tr:nth-child(even){
             background-color:  #efefef;
         }
-        tbody tr:nth-child(3) td:nth-of-type(2) {
+        tbody tr:nth-child(3n) td:nth-child(2) {
+    background-color: #ffbbbb;
+}
+        /* tbody tr:nth-child(even){
+            background-color:  #efefef;
+        }
+        tr:nth-child(3) td:nth-of-type(2) {
             background-color: #ffbbbb;
         }
-        tbody tr:nth-child(6) td:nth-of-type(2) {
+        tr:nth-child(6) td:nth-of-type(2) {
             background-color: #ffbbbb;
 
         }
+         */
+
     </style>
   </head>
   <body>
@@ -58,6 +66,7 @@
             <td>Paul</td>
             <td>Mackie</td>
             <td>Coach</td>
+            <td></td>
           </tr>
           <tr>
             <td>Leoni</td>
